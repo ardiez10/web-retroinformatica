@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css" title="Estilos">
+    <title>Formulario</title>
+</head>
+<body>
+    <header id="arriba">
+        <table class="titulo">
+            <thead>
+                <tr>
+                    <th><h2>CLUB DE RETROGRAMERS</h2></th>
+                </tr>
+            </thead>
+        </table>
+        <p class="parrafoimagen"><img id="imagen9" src="../Imagen/club.png"></p>
+        
+        <p id="introFormulario" class="parrafo">
+            <strong>Únete al Club RetroGamers y revive la magia del pasado!</strong><br>
+            Si eres un apasionado de los videojuegos clásicos, las consolas retro y la informática vintage, 
+            este es el lugar perfecto para ti. En el <strong>Club RetroGamers</strong>, celebramos la historia de los videojuegos,
+             exploramos tecnologías clásicas y compartimos nuestra pasión por lo retro.<br>
+
+            Como miembro del club, disfrutarás de beneficios exclusivos, como:
+        </p>
+        <p>
+            <ul id="listaFormulario">
+                <li>🎮 Acceso a eventos retro: torneos, exposiciones y encuentros temáticos.</li>
+                <li>📚 Recursos únicos: tutoriales, colecciones y documentación histórica.</li>
+                <li>👾 Comunidad activa: conecta con otros amantes de los videojuegos clásicos.</li>
+            </ul>         
+        </p>
+        <p class="parrafo">
+            Completa el formulario con tus preferencias, datos personales y tipo de subscripción, y sé parte de esta comunidad única que mantiene viva la esencia de 
+            los videojuegos de antaño. ¡Te estamos esperando!      
+        </p>
+    </header>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <legend><h3 class="leyenda">Datos de Inscripción</h3></legend>
+                <p>
+                    <label for="sistema">Sistema favorito:</label>
+                    <select name="sistema" required autofocus tabindex="1">
+                        <option value="c64" selected>Commodore 64</option>
+                        <option value="nes">Nintendo Entertainment System</option>
+                        <option value="atari2600">Atari 2600</option>
+                        <option value="spectrum">ZX Spectrum</option>
+                        <option value="amiga">Amiga 500</option>
+                        <option value="msx">MSX</option>
+                        <option value="megadrive">Sega Mega Drive</option>
+                        <option value="snes">Super Nintendo</option>
+                    </select>
+                    <input type="text" name="siglas" size="10" disabled placeholder="Ej: C64">
+                </p>
+                <p>
+                    <label for="juegoFavorito">Juego favorito:</label>
+                    <input type="text" name="juegoFavorito" required tabindex="2" placeholder="Ej: Turrican"><br/>
+                    
+                    <label for="nivelHabilidad">Nivel de habilidad:</label>
+                    <select name="nivelHabilidad" tabindex="3">
+                        <option value="principiante">Principiante</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="experto">Experto</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend><h4 class="leyenda">Detalles de Suscripción</h4></legend>
+                    <p>
+                        <label for="tipoMembresia">Tipo de suscripción:</label><br/>
+                        <input class="formulario" type="radio" name="tipoMembresia" tabindex="4">Básica
+                        <input class="formulario" type="radio" name="tipoMembresia">Premium
+                    </p>
+                    <p>
+                        <label for="pago">Método de pago:</label>
+                        <select name="pago" tabindex="5">
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="paypal">Paypal</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cuota">Cuota mensual:</label>
+                        <input type="number" name="cuota" disabled placeholder="5.00€"><br>
+                        <label for="totalAnual">Total anual:</label>
+                        <input type="number" name="totalAnual" disabled> € <br>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend><h3 class="leyenda">Información del Miembro</h3></legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required autofocus tabindex="6"><br/>
+                
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" name="apellido1" required size="35" tabindex="7">
+                    <label class="formulario2" for="apellido2" >Segundo apellido:</label>
+                    <input type="text" name="apellido2" size="35" tabindex="8"><br/>
+                    <label for="telefono">Teléfono:</label>
+                    <input class="formulario2" type="tel" name="telefono" required size="35" tabindex="9">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" required size="35" value="@" tabindex="10">
+                </p>
+                <fieldset>
+                    <legend><h4 class="leyenda">Dirección de Contacto</h4></legend>
+                    <p>
+                        <label for="calle">Calle:</label>
+                        <input type="text" name="calle" required size="55" tabindex="11">
+                        <label for="num">Número:</label>
+                        <input class="casillaNum" type="number" name="num" tabindex="12">
+                        <label for="piso">Piso:</label>
+                        <input class="casillaNum" type="number" name="piso" min="0" tabindex="13">
+                        <label for="letra">Letra:</label>
+                        <input type="text" name="letra" size="5" tabindex="14"><br/>
+                        
+                        <label for="localidad">Localidad:</label>
+                        <input type="text" name="localidad" required tabindex="15">
+                        <label for="cp">Código postal:</label>
+                        <input type="text" name="cp" required tabindex="16">
+                        <label for="pais">País:</label>
+                        <select name="país" tabindex="17">
+                            <option value="">Selecciona el país</option>
+                            <option value="España">España</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <p class="parrafo">
+                <input type="checkbox" name="tyc">
+                <label for="tyc" tabindex="18">Acepto los términos y condiciones.</label><br/>
+                <input type="checkbox" name="notificaciones">
+                <label for="notificaciones" tabindex="19">Acepto recibir notificaciones sobre eventos retro.</label><br/>
+            </p>
+            <p class="botoncent">
+                <input class="inputBoton" type="submit" value="Enviar Inscripción" tabindex="20">
+                <input class="inputBoton" type="reset" value="Borrar campos" tabindex="21">
+            </p>
+            <p class="volver" tabindex="22">
+                <a href="../index.html">Ir a la página principal</a>
+            </p>
+        </form>        
+    </main>
+    <footer>
+        <hr/>
+        <p class="copy">&copy Alba Rodr&iacute;guez D&iacute;ez 2024</p> 
+    </footer>
+</body>
+</html>
