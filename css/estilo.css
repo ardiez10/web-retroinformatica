@@ -246,10 +246,10 @@ a:link {
     text-decoration: none;
 }
 
-a:visited { 
+/* a:visited { 
     color: black;
     text-decoration: none;
-}
+} */
 
 a.contenidos:link{
     color:white;
@@ -257,11 +257,11 @@ a.contenidos:link{
     text-decoration: none;
 }
 
-a.contenidos:hover{
+/* a.contenidos:hover{
     background-color:black;
     border-radius: 5px;
     padding: 5px;
-}
+} */
 
 /* --------COPY--------- */
 
