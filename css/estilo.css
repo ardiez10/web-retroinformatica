@@ -246,10 +246,15 @@ a:link {
     text-decoration: none;
 }
 
-/* a:visited { 
-    color: black;
+a:visited { 
+    color: purple;
     text-decoration: none;
-} */
+}
+
+a.contenidos:visited { 
+    color: white;
+    text-decoration: none;
+}
 
 a.contenidos:link{
     color:white;
